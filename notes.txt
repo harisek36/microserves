@@ -1,0 +1,115 @@
+
+
+curl https://start.spring.io/starter.tgz -d dependencies=web,lombok -d language=java -d type=maven-project -d artifactId=mser1 -d groupId=com.app360 -d name=testset -d baseDir=sersdf2| tar -xzvf -
+
+
+
+limit-service:
+    curl https://start.spring.io/starter.tgz -d dependencies=web,lombok,cloud-config-client -d language=java -d type=maven-project -d artifactId=limit-service -d groupId=com.app360.microservice -d name=LimitService -d baseDir=limit-service| tar -xzvf -
+
+
+config-server
+    curl https://start.spring.io/starter.tgz -d dependencies=web,lombok,cloud-config-server -d language=java -d type=maven-project -d artifactId=spring-cloud-connfig-server -d groupId=com.app360.microservice -d name=spring-cloud-config-server -d baseDir=cloud-config-server| tar -xzvf -
+
+currency-exchange-service:
+    curl https://start.spring.io/starter.tgz -d dependencies=web,lombok,cloud-config-client -d language=java -d type=maven-project -d artifactId=currency-exchange-service -d groupId=com.app360.microservice -d name=CurrencyExchangeService -d baseDir=currency-exchange-service| tar -xzvf -
+
+
+currency-conversion-service:
+    curl https://start.spring.io/starter.tgz -d dependencies=web,lombok,cloud-config-client -d language=java -d type=maven-project -d artifactId=currency-conversion-service -d groupId=com.app360.microservice -d name=CurrencyConversionService -d baseDir=currency-conversion-service| tar -xzvf -
+
+
+netflix-eureka-naming-server:
+    curl https://start.spring.io/starter.tgz -d dependencies=web,lombok,cloud-config-client,cloud-eureka-server -d language=java -d type=maven-project -d artifactId=netflix-eureka-naming-server -d groupId=com.app360.microservice -d name=NetflixEurekaNamingServer -d baseDir=netflix-eureka-naming-server | tar -xzvf -
+
+Incase of error with Naming Server:
+    Force Update of Snapshots/Release
+        Right click on your project -> Maven -> Update Project -> Use "Force Update of Snapshots/Releases" -> Check this checkbox
+    Purge Your Maven Repository
+        This can be done in two ways
+        1. Inside Eclipse - Right click on the project > Run as Maven Build > dependency:purge-local-repository
+        2. From Command Prompt cd to the project of the folder and run
+        mvn dependency:purge-local-repository
+
+netflix-zuul-api-gateway-server:
+    curl https://start.spring.io/starter.tgz -d dependencies=cloud-zuul,cloud-eureka -d language=java -d type=maven-project -d artifactId=netflix-zuul-api-gateway-server -d groupId=com.app360.microservice -d name=NetflixZuulApiGatewayServer -d baseDir=netflix-zuul-api-gateway-server | tar -xzvf -
+
+
+
+return 
+    GET Limit, sorting By, Sorting mode 
+    Response Entity
+
+Vesrioning apI
+
+content commpression
+    - gZip
+
+Custom Annotations
+
+Security
+    - Resource, Auth
+
+json/XML - content
+
+Validation of entities
+
+swagger defination
+
+simultanious request handling
+
+
+insert into exchange_value(currency_from, to, conversion_multiple) values("usd", "inr", 65);
+insert into exchange_value(currency_from, to, conversion_multiple) values("eur", "inr", 55);
+insert into exchange_value(currency_from, to, conversion_multiple) values("aus", "usd", 70);
+insert into exchange_value(currency_from, to, conversion_multiple) values("eng", "inr", 95);
+
+
+ds and algo, complexity
+
+portland, 
+
+ca 
+
+
+sd, oops, operatonaly scabilty, perfoamve
+
+aws leader ship principles
+
+    5 interviwers 
+
+threads in microservices
+
+curd repo vs JPA repo
+
+
+
+infosys
+    - expose JPA directly as end point without usinng controller
+    - Java 8 streams flow - why ?
+    - AOP
+    - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    curl https://start.spring.io/starter.tgz -d dependencies=web,lombok,cloud-config-client -d language=java -d type=maven-project -d artifactId=testDemo -d groupId=com.app360.testDemo -d name=testDemo -d baseDir=testDemo | tar -xzvf -
+
+
+
+
+1000 taxi, sec level 
+
+time stamp | taxi id | speed  -> Month April
+
+q
